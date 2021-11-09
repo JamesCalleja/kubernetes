@@ -22,12 +22,14 @@
 
 ##### create docker login secret with login credentials
 
-    kubectl create secret docker-registry my-registry-key \
+    docker create secret docker-registry my-registry-key \
+
     --docker-server=https://private-repo \
     --docker-username=user \
     --docker-password=pwd
 
-    kubectl create secret docker-registry my-registry-key --docker-server=https://private-repo --docker-username=user --docker-password=pwd
+
+    docker create secret docker-registry my-registry-key --docker-server=https://private-repo --docker-username=user --docker-password=pwd
 
 ##### access minikube console
 
